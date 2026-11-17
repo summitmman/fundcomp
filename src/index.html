@@ -9,6 +9,13 @@
     <script nomodule src="/build/fundcomp.js"></script>
   </head>
   <body>
-    <my-component first="Stencil" middle="'Don't call me a framework'" last="JS"></my-component>
+    <fc-button id="myButton" aria-label="My button">
+      <template>
+        <span>Click Me</span>
+      </template>
+      <template slot="prefix">
+        <span>Prefix</span>
+      </template>
+    </fc-button>
   </body>
 </html>
